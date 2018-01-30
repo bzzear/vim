@@ -44,3 +44,4 @@ let NERDTreeWinSize=25
 let g:indentLine_char='┆'
 let g:indentLine_enabled = 1
 
+set pastetoggle=<F9>
