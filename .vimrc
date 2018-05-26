@@ -6,6 +6,9 @@ set ruler "打开状态栏标尺
 set incsearch "输入搜索内容时就显示搜索结果
 set hlsearch  "高亮搜索项"
 set autoindent "vim使用自动对齐，把对齐格式应用到下一行(自动缩进）
+set ts=4
+set expandtab
+
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
