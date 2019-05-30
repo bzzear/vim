@@ -33,6 +33,7 @@ Plugin 'tell-k/vim-autopep8'  "自动格式化
 Plugin 'scrooloose/nerdtree'  "树行目录
 Plugin 'Yggdroot/indentLine'  "缩进指示线
 Plugin 'altercation/vim-colors-solarized' "vim配色
+Plugin 'octol/vim-cpp-enhanced-highlight' "cpp语法高亮
 "Plugin 'scrooloose/nerdcommenter' "代码注释插件
 call vundle#end()
 "filetype plugin indent on
@@ -69,3 +70,15 @@ let g:indentLine_enabled = 1
 "let g:solarized_termtrans=0 
 
 set pastetoggle=<F9>
+
+"cpp-enhanced-highlight
+""高亮类，成员函数，标准库和模板
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_concepts_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+"文件较大时使用下面的设置高亮模板速度较快，但会有一些小错误
+""let g:cpp_experimental_template_highlight = 1"
+
+
+
