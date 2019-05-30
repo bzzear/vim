@@ -14,9 +14,12 @@ set softtabstop=4
 set smartindent 
 
 syntax enable
+"colorscheme solarized
+colorscheme  molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+set t_Co=256
 set background=dark
-colorscheme solarized
-
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -35,9 +38,13 @@ call vundle#end()
 "filetype plugin indent on
 
 filetype plugin on
-
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'   
 "let g:EclimCompletionMethod = 'omnifunc'
+"关闭ycm错误语法提示
+let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_enable_diagnostic_highlighting = 0
 
 "autopep8设置"
 let g:autopep8_disable_show_diff=1
@@ -54,11 +61,11 @@ let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 let NERDTreeWinSize=25
 
 "缩进配置
-let g:indentLine_char='┆'
+let g:indentLine_char=' '
 let g:indentLine_enabled = 1
 
 "配色
-let g:solarized_termcolors=256
-let g:solarized_termtrans=0 
+"let g:solarized_termcolors=256
+"let g:solarized_termtrans=0 
 
 set pastetoggle=<F9>
